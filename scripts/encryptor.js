@@ -48,7 +48,7 @@ btn_copy.onclick = copyMessage;
 function validateMessage(msg) {
     let validate = new RegExp("[A-ZÀ-ú0-9]","g");
     if (validate.test(msg.value)) {
-        alert("Caracter inválido");
+        alert("¡Caracter inválido! Por favor, solo digite letras en minúscula sin acentos.");
         window.location.reload();
     }
 }
