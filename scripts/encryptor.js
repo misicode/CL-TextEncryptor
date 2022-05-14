@@ -27,6 +27,12 @@ const code = [
 ];
 
 // Disparadores de eventos
+let btn_help = document.querySelector(".btn-help");
+btn_help.onclick = showHelp;
+
+let btn_close = document.querySelector(".close");
+btn_close.onclick = closeHelp;
+
 let btn_on = document.querySelector(".btn-on");
 btn_on.onclick = encryptMessage;
 
@@ -87,6 +93,18 @@ function copyMessage() {
       }, function(err) {
         console.error('Async: Could not copy text: ', err);
       });
+}
+
+// Función para mostrar las instrucciones
+function showHelp() {
+    document.querySelector(".help").style.display = "block";
+    document.querySelector(".back").style.display = "block";
+}
+
+// Función para cerrar las instrucciones
+function closeHelp() {
+    document.querySelector(".help").style.display = "none";
+    document.querySelector(".back").style.display = "none";
 }
 
 // Función para encriptar el mensaje
