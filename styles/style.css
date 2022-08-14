@@ -28,7 +28,15 @@
 body {
     font-family: var(--text-font);
     letter-spacing: 1px;
+}
+
+.container {
+    height: 100vh;
     background-color: var(--back-color);
+}
+
+.container-body {
+    height: calc(100% - 32px);
 }
 
 .back {
@@ -44,7 +52,8 @@ body {
 
 .container-header {
     display: grid;
-    margin: 2rem 5rem 0;
+    margin: 0 5rem;
+    padding: 2rem 0 0;
     grid-template-columns: 2fr 1fr;
     column-gap: 40px;
 }
@@ -322,13 +331,14 @@ body {
     font-size: 12px;
 }
 
-.credits > a {
-    color: var(--text-light);
+.credits > a, .credits > a:-webkit-any-link {
+    color: var(--text-medium);
+    font-weight: bold;
     text-decoration: none;
 }
 
 .credits > a:hover {
-    color: var(--text-medium);
+    color: var(--text-light);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -338,14 +348,34 @@ body {
 }
 
 @media only screen and (max-width: 1045px) {
+    .group-title {
+        grid-template-columns: 4fr 1fr;
+    }
     .title {
         font-size: 38px;
     }
+    .group-btns .btn {
+        font-size: 12px;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 910px) {
+    .group-title {
+        grid-template-columns: 5fr 1fr;
+    }
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .container {
+        height: 100%;
+    }
+
     .container-header {
-        margin: 1rem 2.5rem 0;
+        margin: 0 2.5rem;
+        padding: 1.5rem 0 0;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 20px;

@@ -9,71 +9,75 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <div class="back"></div>
-    <header class="container-header">
-        <div class="group-title">
-            <h1 class="title">Encriptador <strong>de Texto</strong></h1>
-            <img src="./public/alura_logo.svg" />
-        </div>
-        <div class="group-btns">
-            <button class="btn btn-help">Instrucciones</button>
-            <button class="btn btn-info" onclick="location.href='https://github.com/alura-challenges/challenge-one-encriptador-latam'">Más Información</button>
-        </div>
-    </header>
-    <div class="help">
-        <div class="help-content">
-            <div class="help-header">
-                <span class="close">X</span>
-                <h5>Código de Encriptación</h5>
-            </div>
-            <div class="help-body">
-                <ul>
-                    <li>e ⇔ enter</li>
-                    <li>i ⇔ imes</li>
-                    <li>o ⇔ ober</li>
-                    <li>u ⇔ ufat</li>
-                    <li>a ⇔ ai</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <main class="container-content">
-        <div class="container-section">
-            <section class="section-input">
-                <div class="card">
-                    <label>Ingrese el texto aquí:</label>
-                    <div class="card-input">
-                        <textarea class="text input" onkeyup="validateMessage(this)"></textarea>
-                        <p>Solo se admiten letras en minúscula y sin acentos.</p>
+    <div class="container">
+        <div class="back"></div>
+        <div class="container-body">
+            <header class="container-header">
+                <div class="group-title">
+                    <h1 class="title">Encriptador <strong>de Texto</strong></h1>
+                    <img src="./public/alura_logo.svg" />
+                </div>
+                <div class="group-btns">
+                    <button class="btn btn-help">Instrucciones</button>
+                    <button class="btn btn-info" onclick="location.href='https://github.com/alura-challenges/challenge-one-encriptador-latam'">Más Información</button>
+                </div>
+            </header>
+            <div class="help">
+                <div class="help-content">
+                    <div class="help-header">
+                        <span class="close">X</span>
+                        <h5>Código de Encriptación</h5>
+                    </div>
+                    <div class="help-body">
+                        <ul>
+                            <li>e ⇔ enter</li>
+                            <li>i ⇔ imes</li>
+                            <li>o ⇔ ober</li>
+                            <li>u ⇔ ufat</li>
+                            <li>a ⇔ ai</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <section class="section-btns">
-                <button class="btn btn-on">Encriptar</button>
-                <button class="btn btn-off">Desencriptar</button>
-                <button class="btn btn-cls">Limpiar</button>
-            </section>
-            <section class="section-output">
-                <div class="card">
-                    <div class="msg-default">
-                        <img src="./public/Search.gif" />
-                        <h4>Ningún mensaje fue encontrado</h4>
-                        <p>Ingrese el texto que desee encriptar o desencriptar.</p>
-                    </div>
-                    <div class="msg-result">
-                        <label>Mensaje:</label>
-                        <div class="result">
-                            <textarea class="text output" disabled></textarea>
-                            <button class="btn btn-copy">Copiar</button>
+            </div>
+            <main class="container-content">
+                <div class="container-section">
+                    <section class="section-input">
+                        <div class="card">
+                            <label>Ingrese el texto aquí:</label>
+                            <div class="card-input">
+                                <textarea class="text input" onkeyup="validateMessage(this)"></textarea>
+                                <p>Solo se admiten letras en minúscula y sin acentos.</p>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <section class="section-btns">
+                        <button class="btn btn-on">Encriptar</button>
+                        <button class="btn btn-off">Desencriptar</button>
+                        <button class="btn btn-cls">Limpiar</button>
+                    </section>
+                    <section class="section-output">
+                        <div class="card">
+                            <div class="msg-default">
+                                <img src="./public/Search.gif" />
+                                <h4>Ningún mensaje fue encontrado</h4>
+                                <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+                            </div>
+                            <div class="msg-result">
+                                <label>Mensaje:</label>
+                                <div class="result">
+                                    <textarea class="text output" disabled></textarea>
+                                    <button class="btn btn-copy">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </main>
         </div>
-    </main>
-    <footer class="container-footer">
-        <p class="credits">© 2022 Learning and Programming | Coded by <a href="https://github.com/aleeMR">AMR</a></p>
-    </footer>
+        <footer class="container-footer">
+            <p class="credits">© 2022 Learning and Programming | Coded by <a href="https://github.com/aleeMR">MISICOD</a></p>
+        </footer>
+    </div>
     <script src="scripts/encryptor.js"></script>
 </body>
 </html>
