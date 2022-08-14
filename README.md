@@ -10,7 +10,7 @@ Sistema que permite encriptar o desencriptar un texto ingresado por el usuario b
 
 ## Muestra
 
-![CL-TextEncryptor](https://user-images.githubusercontent.com/88341114/168442204-d15be465-2518-4def-90df-3b28f89a1d78.gif)
+<img src="https://user-images.githubusercontent.com/88341114/184557586-042deb7a-01c5-42a2-acb7-1b882a137c22.gif" width="700"/>
 
 ## Código de Encriptación
 | Llave | convertido a | Valor |
