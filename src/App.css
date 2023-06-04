@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+.container-content {
+  margin: 4.5rem 5rem 2.5rem;
+}
+.container-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 75px;
+  column-gap: 40px;
+  row-gap: 40px;
+}

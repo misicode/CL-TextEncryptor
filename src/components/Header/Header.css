@@ -1,0 +1,6 @@
+.container-header {
+  display: grid;
+  margin: 0 5rem;
+  padding: 2rem 0 0;
+  grid-template-columns: 3fr 1fr;
+}

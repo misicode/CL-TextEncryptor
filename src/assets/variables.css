@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --btn1-color: #E2AD42;
+  --btn1-hover: #133a55;
+  --btn2-color: #E38E41;
+  --btn2-hover: #aebccb; 
+  --btn3-color: #D94358;
+
+  --text-font: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --text-light: #ffffff;
+  --text-medium: #66a1c8;
+  --text-semidark: #2a668e;
+  --text-dark: #232e39;
+  --back-color: #ebedef;
+  --nav-color: #232e39;
+  
+}
+.light {
+  --text-color: #161827;
+  --background-color: #308090;
+  --toggle-color: #085763;
+  --toggle-shadow: #064049;
+  --card-color: #ffffff;
+  --border-color: #c9c9c9;
+  --border-focus: #9a9a9a;
+}
+.dark {
+  --text-color: #fff;
+  --background-color: #1d2136;
+  --toggle-color: #141725;
+  --toggle-shadow: #0f111d;
+  --card-color: #262b42;
+  --border-color: rgba(94,94,94,.55);
+  --border-focus: rgba(94,94,94,.9);
+}
