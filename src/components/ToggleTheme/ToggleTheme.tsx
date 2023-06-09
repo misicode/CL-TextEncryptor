@@ -9,7 +9,7 @@ const ToggleTheme = () => {
 
   return (
     <label className="switch" htmlFor="thememode">
-      <input type="checkbox" onClick={ toggleTheme } id="thememode" />
+      <input type="checkbox" onClick={ toggleTheme } id="thememode" name="switch_theme_mode" />
       <span className="slider round"></span>
     </label>
   );
