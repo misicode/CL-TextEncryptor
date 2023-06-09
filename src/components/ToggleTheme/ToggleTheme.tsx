@@ -8,8 +8,8 @@ const ToggleTheme = () => {
   const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <label className="switch" htmlFor="thememode">
-      <input type="checkbox" onClick={ toggleTheme } id="thememode" name="switch_theme_mode" />
+    <label className="switch" aria-label="theme_mode">
+      <input type="checkbox" onClick={ toggleTheme } aria-label="switch_theme_mode" />
       <span className="slider round"></span>
     </label>
   );
