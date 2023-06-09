@@ -8,8 +8,8 @@ const ToggleTheme = () => {
   const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <label className="switch">
-      <input type="checkbox" onClick={ toggleTheme } area-label="Modo de tema" />
+    <label className="switch" id="switch">
+      <input type="checkbox" onClick={ toggleTheme } area-labelledby="theme mode" />
       <span className="slider round"></span>
     </label>
   );

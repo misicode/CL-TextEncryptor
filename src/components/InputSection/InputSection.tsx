@@ -93,9 +93,9 @@ const InputSection = ({ onNewInputText }: InputSectionProps) => {
         </div>
       </section>
       <section className="section-btns">
-        <button className="btn btn-on" id="Encrypt" name="Encriptar" type="submit">Encriptar</button>
-        <button className="btn btn-off" id="Decrypt" name="Desencriptar" type="submit">Desencriptar</button>
-        <button className="btn btn-cls" name="Limpiar" type="button" onClick={ onClear }>Limpiar</button>
+        <button className="btn btn-on" id="Encrypt" aria-label="encrypt" type="submit">Encriptar</button>
+        <button className="btn btn-off" id="Decrypt" aria-label="decrypt" type="submit">Desencriptar</button>
+        <button className="btn btn-cls" aria-label="clean" type="button" onClick={ onClear }>Limpiar</button>
       </section>
     </form>
   );

@@ -38,7 +38,7 @@ const OutputSection = ({ newOutputText }: OutputSectionProps) => {
               <div className="result">
                 <textarea className="text output" value={ newOutputText } disabled>{ newOutputText }</textarea>
                 <div>
-                  <button className="btn btn-copy" name="Copiar" onClick={ onCopy }>Copiar</button>
+                  <button className="btn btn-copy" aria-label="copy" onClick={ onCopy }>Copiar</button>
                 </div>
               </div>
             </>

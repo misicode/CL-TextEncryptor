@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className="container-header">
-      <button name="Información" onClick={ onClick }>
+      <button aria-label="information" onClick={ onClick }>
         <span></span>
       </button>
       <img src="title.webp" alt="Encriptador de Texto" />
