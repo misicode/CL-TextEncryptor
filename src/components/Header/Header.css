@@ -1,6 +1,42 @@
 .container-header {
   display: grid;
-  margin: 0 5rem;
-  padding: 2rem 0 0;
-  grid-template-columns: 3fr 1fr;
+  margin: 0 7rem;
+  padding: 4rem 0 0;
+  grid-template-columns: 120px 5fr 1fr;
+}
+.container-header > button {
+  height: 72px;
+  width: 72px;
+  margin: auto 0;
+  background: var(--info-bg);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 3.5px 3.5px 2px var(--info-border);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+}
+.container-header > button:hover {
+  margin-top: 5px;
+  margin-left: 1px;
+  box-shadow: 3px 3px 2px var(--info-border);
+  cursor: pointer;
+}
+.container-header > button:active {
+  margin-top: 8px;
+  margin-left: 2px;
+  box-shadow: 1.5px 1.5px var(--info-border);
+}
+.container-header > button > span {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/a5hmTKe.png");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.container-header > img {
+  height: 80px;
 }

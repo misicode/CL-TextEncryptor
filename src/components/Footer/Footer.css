@@ -1,0 +1,22 @@
+.container-footer {
+  position: absolute;
+  display: flex;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+}
+.credits {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: bold;
+}
+.credits > a,
+.credits > a:-webkit-any-link {
+  color: var(--white);
+  font-weight: bolder;
+  text-decoration: none;
+}
+.credits > a:hover {
+  color: var(--info-bg);
+}

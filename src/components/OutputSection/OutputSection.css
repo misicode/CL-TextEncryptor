@@ -1,4 +1,47 @@
 .section-output {
   grid-column: 2;
-  grid-row: 1/3;
+}
+.section-output > .card {
+  padding-bottom: 0em;
+}
+.msg-default {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.msg-default > img {
+  width: 70%;
+}
+.msg-default > p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+.result {
+  display: grid;
+  grid-template-rows: 16em 6em;
+  row-gap: 2.5em;
+  justify-items: center;
+}
+.output {
+  padding-bottom: 0px;
+  font-size: 16px;
+  background: var(--result-bg);
+  border-color: var(--card-border);
+}
+.result > div {
+  display: grid;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-rows: 3.3em;
+  justify-content: center;
+}
+.btn-copy {
+  padding: 0 2em;
+  background-color: var(--alert-btn-bg);
+  border-right: 5px solid var(--alert-btn-border);
+  border-bottom: 7px solid var(--alert-btn-border);
 }
