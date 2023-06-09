@@ -9,7 +9,7 @@ const ToggleTheme = () => {
 
   return (
     <label className="switch">
-      <input type="checkbox" onClick={ toggleTheme } />
+      <input type="checkbox" onClick={ toggleTheme } area-label="Modo de tema" />
       <span className="slider round"></span>
     </label>
   );

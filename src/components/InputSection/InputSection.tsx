@@ -87,15 +87,15 @@ const InputSection = ({ onNewInputText }: InputSectionProps) => {
         <div className="card">
           <label>Ingrese el texto aquí:</label>
           <div className="card-input">
-            <textarea className="text input" value={ inputText } onChange={ onChange }></textarea>
+            <textarea className="text input" value={ inputText } onChange={ onChange } aria-label="Mensaje de entrada"></textarea>
             <p>Solo se admiten letras en minúscula y sin acentos</p>
           </div>
         </div>
       </section>
       <section className="section-btns">
-        <button className="btn btn-on" id="Encrypt" type="submit">Encriptar</button>
-        <button className="btn btn-off" id="Decrypt" type="submit">Desencriptar</button>
-        <button className="btn btn-cls" type="button" onClick={ onClear }>Limpiar</button>
+        <button className="btn btn-on" id="Encrypt" name="Encriptar" type="submit">Encriptar</button>
+        <button className="btn btn-off" id="Decrypt" name="Desencriptar" type="submit">Desencriptar</button>
+        <button className="btn btn-cls" name="Limpiar" type="button" onClick={ onClear }>Limpiar</button>
       </section>
     </form>
   );

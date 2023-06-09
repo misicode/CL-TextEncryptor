@@ -22,10 +22,10 @@ const Header = () => {
 
   return (
     <header className="container-header">
-      <button onClick={ onClick }>
+      <button name="Información" onClick={ onClick }>
         <span></span>
       </button>
-      <img src="title.webp" />
+      <img src="title.webp" alt="Encriptador de Texto" />
       <ToggleTheme />
     </header>
   );

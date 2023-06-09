@@ -27,7 +27,7 @@ const OutputSection = ({ newOutputText }: OutputSectionProps) => {
           (!newOutputText)
           ? (
             <div className="msg-default">
-              <img src="bmo.gif" />
+              <img src="bmo.gif" alt="BMO esperando" />
               <h4>Ningún mensaje fue encontrado</h4>
               <p>Ingrese el texto que desee encriptar o desencriptar</p>
             </div>
@@ -38,7 +38,7 @@ const OutputSection = ({ newOutputText }: OutputSectionProps) => {
               <div className="result">
                 <textarea className="text output" value={ newOutputText } disabled>{ newOutputText }</textarea>
                 <div>
-                  <button className="btn btn-copy" onClick={ onCopy }>Copiar</button>
+                  <button className="btn btn-copy" name="Copiar" onClick={ onCopy }>Copiar</button>
                 </div>
               </div>
             </>
