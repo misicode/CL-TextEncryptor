@@ -10,10 +10,16 @@
   height: 100%;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.msg-default > img {
-  width: 70%;
+.msg-default > div {
+  display: flex;
+  min-height: 15rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+.msg-default > div > img {
+  width: 10rem;
 }
 .msg-default > p {
   margin-top: 6px;
@@ -46,8 +52,11 @@
   border-bottom: 7px solid var(--alert-btn-border);
 }
 @media only screen and (max-width: 1024px) {
-  .msg-default > img {
-    width: 90%;
+  .msg-default > div {
+    min-height: 14rem;
+  }
+  .msg-default > div > img {
+    width: 9rem
   }
   .msg-default > p {
     font-size: 13px;
@@ -63,8 +72,11 @@
   .section-output {
     grid-column: 1;
   }
-  .msg-default > img {
-    width: 30%;
+  .msg-default > div {
+    min-height: 10rem;
+  }
+  .msg-default > div > img {
+    width: 10rem
   }
   .section-output > .card {
     padding-bottom: 2em;
@@ -91,8 +103,11 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  .msg-default > img {
-    width: 35%;
+  .msg-default > div {
+    min-height: 9rem;
+  }
+  .msg-default > div > img {
+    width: 8rem
   }
   .msg-default > h4 {
     font-size: 14px;
@@ -117,8 +132,11 @@
   }
 }
 @media only screen and (max-width: 492px) {
-  .msg-default > img {
-    width: 40%;
+  .msg-default > div {
+    min-height: 8rem;
+  }
+  .msg-default > div > img {
+    width: 7rem
   }
   .msg-default > h4 {
     font-size: 13px;
@@ -140,7 +158,7 @@
   }
 }
 @media only screen and (max-width: 394px) {
-  .msg-default > img {
+  .msg-default > div {
     width: 50%;
   }
   .msg-default > h4 {
