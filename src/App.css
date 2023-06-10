@@ -3,3 +3,8 @@
   color: var(--text);
   background-color: var(--background);
 }
+@media only screen and (max-width: 876px) {
+  .container {
+    height: auto;
+  }
+}

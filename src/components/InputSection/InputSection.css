@@ -12,6 +12,7 @@
 .card > label, .msg-result > label {
   display: inline-block;
   margin-bottom: 1em;
+  font-size: 16px;
 }
 .card-input {
   display: grid;
@@ -88,4 +89,77 @@
   background-color: var(--btn3-bg);
   border-right: 5px solid var(--btn3-border);
   border-bottom: 7px solid var(--btn3-border);
+}
+@media only screen and (max-width: 1024px) {
+  .card {
+    padding: 2em 43px;
+  }
+}
+@media only screen and (max-width: 876px) {
+  .input {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    padding: 1.8em 40px;
+  }
+  .card > label, .msg-result > label {
+    font-size: 15px;
+  }
+  .input {
+    font-size: 21px;
+  }
+  .section-btns {
+    grid-template-rows: 3em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .card {
+    padding: 1.3em 35px;
+  }
+  .card > label, .msg-result > label {
+    font-size: 14px;
+  }
+  .input {
+    font-size: 18px;
+  }
+  .section-btns {
+    grid-template-rows: 2.8em;
+    column-gap: 25px;
+  }
+  .btn {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 492px) {
+  .card {
+    padding: 1.5em 36px;
+  }
+  .card > label, .msg-result > label {
+    font-size: 13px;
+  }
+  .card-input {
+    grid-template-rows: 12em 1.8em;
+  }
+  .input {
+    font-size: 16px;
+  }
+  .section-btns {
+    grid-template-rows: 2.5em;
+    column-gap: 20px;
+  }
+  .btn {
+    letter-spacing: .5px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 394px) {
+  .section-btns {
+    grid-template-rows: 2.5em;
+    column-gap: 15px;
+  }
+  .btn {
+    letter-spacing: 0px;
+  }
 }

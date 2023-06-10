@@ -57,3 +57,54 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+@media only screen and (max-width: 768px) {
+  .switch {
+    width: 50px;
+    height: 27px;
+  }
+  .slider:before {
+    height: 32px;
+    width: 32px;
+    background-size: 18px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    -webkit-transform: translateX(35px);
+    background-size: 18px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .switch {
+    width: 45px;
+    height: 23px;
+  }
+  .slider:before {
+    height: 28px;
+    width: 28px;
+    background-size: 15px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(32px);
+    -ms-transform: translateX(32px);
+    -webkit-transform: translateX(32px);
+    background-size: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .switch {
+    width: 35px;
+    height: 18px;
+  }
+  .slider:before {
+    height: 23px;
+    width: 23px;
+    background-size: 12px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    -webkit-transform: translateX(25px);
+    background-size: 12px;
+  }
+}

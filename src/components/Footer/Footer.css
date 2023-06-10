@@ -20,3 +20,22 @@
 .credits > a:hover {
   color: var(--info-bg);
 }
+@media only screen and (max-width: 876px) {
+  .container-footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .credits {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 492px) {
+  .container-footer {
+    height: 80px;
+    padding: 0 2rem 15px;
+    text-align: center;
+    align-items: center;
+  }
+}
