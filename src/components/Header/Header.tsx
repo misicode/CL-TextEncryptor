@@ -25,7 +25,7 @@ const Header = () => {
       <button aria-label="information" onClick={ onClick }>
         <span></span>
       </button>
-      <img src="title.webp" alt="Encriptador de Texto" />
+      <img src="title.webp" alt="Encriptador de Texto" height="100%" width="100%" />
       <ToggleTheme />
     </header>
   );
