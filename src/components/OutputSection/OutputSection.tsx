@@ -28,7 +28,7 @@ const OutputSection = ({ newOutputText }: OutputSectionProps) => {
           ? (
             <div className="msg-default">
               <div>
-                <img src="bmo.gif" alt="BMO esperando" width="100%" height="auto" />
+                <img src="bmo.gif" alt="BMO esperando" width="100%" height="100%" />
               </div>
               <h4>Ningún mensaje fue encontrado</h4>
               <p>Ingrese el texto que desee encriptar o desencriptar</p>

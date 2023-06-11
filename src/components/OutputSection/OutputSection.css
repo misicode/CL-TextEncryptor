@@ -20,6 +20,7 @@
 }
 .msg-default > div > img {
   width: 10rem;
+  height: auto;
 }
 .msg-default > p {
   margin-top: 6px;
