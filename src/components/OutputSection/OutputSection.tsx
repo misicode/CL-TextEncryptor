@@ -11,7 +11,7 @@ const OutputSection = ({ newOutputText }: OutputSectionProps) => {
     navigator.clipboard.writeText(newOutputText).then(function() {
       showAlert(
         "¡Mensaje copiado!",
-        "La copia al portapapeles fue exitosa",
+        "El mensaje se ha copiado al portapapeles exitosamente",
         "success",
         false
       );
