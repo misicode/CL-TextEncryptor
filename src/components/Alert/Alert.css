@@ -1,9 +1,13 @@
 div:where(.swal2-container) div:where(.swal2-popup) {
-  width: 25em !important;
-  padding: 0 0 1.45em !important;
+  width: 23em !important;
+  padding: 1em 2em 1.85em !important;
   color: var(--text) !important;
   background-color: var(--card-bg) !important;
   border-radius: 12px !important;
+  text-align: center !important;
+}
+div:where(.swal2-icon) {
+  margin-top: 1em !important;
 }
 div:where(.swal2-container) div:where(.swal2-icon).swal2-info {
   width: 4.5em !important;
@@ -55,4 +59,3 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:active {
   border-right-width: 1px !important;
   border-bottom-width: 2px !important;
 }
-

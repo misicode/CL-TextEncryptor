@@ -30,14 +30,14 @@ const CODE_RULES = [
     value: "ufat",
   },
 ];
-const VALIDATOR = new RegExp(/^[a-z ]*$/);
+const TEXT_VALIDATOR = new RegExp(/^[a-z ]*$/);
 
 const InputSection = ({ onNewInputText }: InputSectionProps) => {
   const [inputText, setInputText] = useState<string>("");
   let text: string = "";
 
   const onChange = ({ target }: React.ChangeEvent<HTMLTextAreaElement>) => {
-    if (!VALIDATOR.test(target.value)) {
+    if (!TEXT_VALIDATOR.test(target.value)) {
       setInputText("");
       showAlert(
         "¡Caracter inválido!",
