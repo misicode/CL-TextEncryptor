@@ -15,9 +15,9 @@ Aplicación que permite encriptar o desencriptar un mensaje ingresado por el usu
 
 ## 📸 Capturas
 
-<img src="https://github.com/misicode/CL-TextEncryptor/assets/88341114/24de2af4-6c60-484f-8436-dd715b38ee6f" />
+<img src="https://github.com/misicode/CL-TextEncryptor/assets/88341114/8e83644e-9629-4469-baf7-c49d44db9eb8" />
 
-<img src="https://github.com/misicode/CL-TextEncryptor/assets/88341114/5838fc73-b4a3-4a35-a1a2-90ab8a94b4c5" />
+<img src="https://github.com/misicode/CL-TextEncryptor/assets/88341114/faff8347-39a9-4303-b536-5435717f0c16" />
 
 ## 💻 Instalación y configuración
 
